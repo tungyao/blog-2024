@@ -16,6 +16,11 @@
                 <th scope="row">{{$dat->id}}</th>
                 <td><a href="/post/{{$dat->title}}" target="_blank">{{$dat->title}}</a></td>
                 <td>{{$dat->created_at}}</td>
+                @if ($admin)
+                    <td>
+                        <button>编辑</button>
+                    </td>
+                @endif
             </tr>
         @endforeach
 

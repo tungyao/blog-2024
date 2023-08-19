@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [IndexController::class, "index"]);
 Route::get('/post/{title}', [PostController::class, "index"]);
-Route::get("/me/login", [\App\Http\Controllers\UserController::class, "login"])->middleware(AuthenticateOnceWithBasicAuth::class);;
+Route::get("/me/login", [\App\Http\Controllers\UserController::class, "login"])->middleware(AuthenticateOnceWithBasicAuth::class);
+Route::post("/me/edit",[\App\Http\Controllers\UserController::class,'edit']);

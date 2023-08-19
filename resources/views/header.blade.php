@@ -8,6 +8,4 @@
     <title></title>
     <link href="/css/bootstrap.css" rel="stylesheet">
     <script src="/js/bootstrap.js"></script>
-    <style>
-    </style>
 </head>
